@@ -26,8 +26,23 @@
           <input type="search" id="search-box" placeholder="search here..." />
           <label for="search-box" class="fas fa-search"></label>
         </form>
+        <nav class="navbar navbar-inverse bg-inverse bg-faded">
+          <div class="row">
+            <div class="col align-items-center d-flex">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#cart">
+                Cart (<span class="total-count"></span>)</button
+              ><button class="clear-cart btn btn-danger ms-2">
+                Clear Cart
+              </button>
+              <a href="login.html" class="fas fa-user-circle"></a>
+            </div>
+          </div>
+        </nav>
       </div>
-
       <div class="header-2">
         <nav class="navbar navbar-expand-lg navi">
           <div class="container-fluid">
@@ -85,25 +100,6 @@
         </nav>
 
         <div class="icons">
-          <!-- Nav -->
-          <nav class="navbar navbar-inverse bg-inverse bg-faded">
-            <div class="row">
-              <div class="col align-items-center d-flex">
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-toggle="modal"
-                  data-target="#cart">
-                  Cart (<span class="total-count"></span>)</button
-                ><button class="clear-cart btn btn-danger ms-2">
-                  Clear Cart
-                </button>
-                <a href="login.html" class="fas fa-user-circle"></a>
-              </div>
-            </div>
-          </nav>
-
-          <!-- <a href="index.html" class="fas fa-shopping-cart" id="cart">0</a> -->
         </div>
 
         <!-- Modal -->
@@ -471,18 +467,62 @@
 
     <section class="contact" id="contact">
       <h1 class="heading"><span>contact</span> us</h1>
+      <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="name" placeholder="Your name..">
+      
+          <label for="lname">Phone / Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+          <label for="lname">Address</label>
+          <input type="text" id="email" name="email" placeholder="Your area..">
+          <label for="country">City</label>
+          <select id="country" name="country">
+            <option value="Dhaka">Dhaka</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Jamalpur">Jamalpur</option>
+            <option value="Mymensingh">Mymensingh</option>
+            <option value="Tangail">Tangail</option>
+            <option value="Mirpur">Mirpur</option>
+            <option value="Mohakhali">Mohakhali</option>
+            <option value="Uttra">Uttra</option>
+            <option value="Badda">Badda</option>
+            <option value="Rampura">Rampura</option>
+          </select>
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Bhutan">Bhutan</option>
+            <option value="Saudi Arab">Saudi Arab</option>
+            <option value="Rashiya">Rashiya</option>
+            <option value="China">China</option>
+            <option value="Hungery">Hungery</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+    
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+      <!-- <h1 class="heading"><span>contact</span> us</h1>
 
       <form action="">
         <div class="inputBox">
           <input type="text" placeholder="name" />
           <input type="email" placeholder="email" />
-        </div>
-
-        <div class="inputBox">
           <input type="number" placeholder="number" />
           <input type="text" placeholder="subject" />
         </div>
-
         <textarea
           placeholder="message"
           name=""
@@ -491,7 +531,7 @@
           rows="10"></textarea>
 
         <input type="submit" value="send message" class="btn" />
-      </form>
+      </form> -->
     </section>
 
     <section class="newsletter">
