@@ -349,6 +349,18 @@ section {
   color: #333;
   padding: 0.5rem 0;
 }
+.location{
+  font-size: 20px;
+  text-align: center;
+  text-wrap: ;
+}
+.location-main{
+  font-size: 40px;
+  text-align: center;
+  color: var(--green);
+
+}
+
 
 .product .box-container .box .price span {
   font-size: 1.5rem;
