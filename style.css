@@ -451,7 +451,7 @@ section {
 .contact form {
   justify-content: center;
   text-align: center;
-  font-size:22px;
+  font-size:18px;
   padding: 0.5rem;
   border: 0.1rem solid rgba(250, 249, 249, 0.3);
 }
@@ -526,6 +526,19 @@ section {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+}
+.cart{
+  display: flex;
+  justify-content: center;
+  
+}
+.cart-cheak{
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 10px;
+
+  
+
 }
 
 .footer .box-container .box {
@@ -719,4 +732,9 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+.div{
+  padding: 12px;
+  font-size: 32px;
 }
