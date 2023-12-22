@@ -99,12 +99,13 @@ section {
   color: #333;
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   text-transform: none;
+
   
 }
 
 .header-1 .search-box-container label {
   height: 100%;
-  width: 12rem;
+  width: 8rem;
   font-size: 2.5rem;
   line-height: 5rem;
   color: #fff;
@@ -798,7 +799,6 @@ form button:hover {
 }
 .cheak{
   display:flex;
-  margin-top: 10px;
 }
 .ss{
   font-size: 20px;
@@ -830,5 +830,9 @@ form button:hover {
     margin: 4px 2px;
     cursor: pointer;
   }
-
+.payment{
+  height: 1200px;
+  width: 800px;
+  display: flex;
+}
 
