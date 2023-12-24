@@ -67,7 +67,7 @@ section {
 }
 
 .header-1 {
-  background: #0df30550;
+  background: #e2e1e250;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,39 +85,6 @@ section {
   color: var(--green);
 }
 
-.header-1 .search-box-container {
-  display: flex;                 
-  height: 5rem;
-  
-}
-
-.header-1 .search-box-container #search-box {
-  height: 100%;
-  width: 100%;
-  padding: 1rem;
-  font-size: 2rem;
-  color: #333;
-  border: 0.1rem solid rgba(0, 0, 0, 0.3);
-  text-transform: none;
-
-  
-}
-
-.header-1 .search-box-container label {
-  height: 100%;
-  width: 8rem;
-  font-size: 2.5rem;
-  line-height: 5rem;
-  color: #fff;
-  background: var(--green);
-  text-align: center;
-
-  cursor: pointer;
-}
-
-.header-1 .search-box-container label:hover {
-  background: var(--black);
-}
 
 .header-2 {
   background: #39d1c9;
@@ -164,6 +131,43 @@ section {
   color: var(--green);
 }
 
+/* Styles for the search bar */
+.search-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px 32px 8px 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.search-button {
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust icon position */
+.fa-search {
+  margin-right: 8px;
+}
 #menu-bar {
   font-size: 3rem;
   border-radius: 0.5rem;
@@ -172,7 +176,7 @@ section {
   color: var(--black);
   cursor: pointer;
   display: none;
- 
+  align-items: center;
 }
 
 .home {
@@ -838,5 +842,48 @@ form button:hover {
   height: 1200px;
   width: 800px;
   display: flex;
+}
+/*---------- blog section ------------*/
+.blogs .blog-slider .box{
+  margin: 2rem 0;
+  border: var(--border);
+  display: flex;
+}
+
+.blogs .blog-slider .box:hover{
+  border: var(--border-hover);
+}
+
+.blogs .blog-slider .box .image{
+  height: 25rem;
+  width: 70%;
+  overflow: hidden;
+
+}
+
+.blogs .blog-slider .box .image img{
+  height: 100%;
+  width: 60%;
+  object-fit: cover;
+}
+
+.blogs .blog-slider .box:hover .image img{
+  transform: scale(1.1);
+}
+
+.blogs .blog-slider .box .content{
+  padding: 1.5rem;
+}
+
+.blogs .blog-slider .box .content h3{
+  font-size: 2.2rem;
+  color: var(--black);
+}
+
+.blogs .blog-slider .box .content p{
+  font-size: 1.4rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+  line-height: 2;
 }
 

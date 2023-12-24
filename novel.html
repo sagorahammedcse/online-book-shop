@@ -22,21 +22,18 @@
       <div class="header-1">
         <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Online Book Shop</a>
 
-        <form action="" class="search-box-container">
-          <input type="search" id="search-box" placeholder="search here..." />
-          <label for="search-box" class="fas fa-search"></label>
-        </form>
+        <div class="search-container">
+          <form action="/search" method="GET">
+            <div class="search-wrapper">
+              <input type="text" placeholder="Search..." name="q" class="search-input">
+              <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+          </form>
+        </div>
         <nav class="navbar navbar-inverse bg-inverse bg-faded">
           <div class="row">
             <div  class="col align-items-center d-flex">
-              <!-- <button 
-                type="button"
-                class="btn btn-primary"
-                data-toggle="modal"
-                data-target="#cart">
-                Cart (<span class="total-count"></span>) </a>
-                <a  href="cart.html" ></a>
-              </button> -->
+             
               <button class="">
                 
               </button>
@@ -113,6 +110,16 @@
                 <li class="nav-item mx-3">
                   <a class="nav-link" aria-current="page" href="./contact.html"
                     >Contact</a
+                  >
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" aria-current="page" href="./blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" aria-current="page" href="./contact.html"
+                    >About</a
                   >
                 </li>
               </ul>

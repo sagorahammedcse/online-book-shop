@@ -22,11 +22,14 @@
     <header>
         <div class="header-1">
             <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Online Book Shop</a>
-    
-            <form action="" class="search-box-container">
-              <input type="search" id="search-box" placeholder="search here..." />
-              <label for="search-box" class="fas fa-search"></label>
-            </form>
+            <div class="search-container">
+              <form action="/search" method="GET">
+                <div class="search-wrapper">
+                  <input type="text" placeholder="Search..." name="q" class="search-input">
+                  <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                </div>
+              </form>
+            </div>
             <nav class="navbar navbar-inverse bg-inverse bg-faded">
               <div class="row">
                 <div  class="col align-items-center d-flex">
@@ -109,6 +112,16 @@
                     >Contact</a
                   >
                 </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" aria-current="page" href="./blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" aria-current="page" href="./contact.html"
+                    >About</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -150,8 +163,8 @@
                                 </tbody>
                             </table>
                             <div class="parces text-right">
-                                <button class="btn btn-warning border-100000 text-white btn-block" id="buyBtn" onclick="buyNow()" style="cursor:allowed">Buy
-                                    Now
+                                <button class="btn btn-warning border-100000 text-white btn-block" id="buyBtn" onclick="buyNow()" style="cursor:allowed"><a href="cheakout.html">Buy Now</a> 
+                                  
                                     <button class="btn btn-warning border-10000 text-white btn-block" id="buyBtn" onclick="buyNow()"  style="cursor:allowed" ><a href="cheakout.html">Cheak Process</a> 
                                     </button>
                                 </button>

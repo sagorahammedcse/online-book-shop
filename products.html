@@ -22,21 +22,18 @@
       <div class="header-1">
         <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Online Book Shop</a>
 
-        <form action="" class="search-box-container">
-          <input type="search" id="search-box" placeholder="search here..." />
-          <label for="search-box" class="fas fa-search"></label>
-        </form>
+        <div class="search-container">
+          <form action="/search" method="GET">
+            <div class="search-wrapper">
+              <input type="text" placeholder="Search..." name="q" class="search-input">
+              <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+          </form>
+        </div>
         <nav class="navbar navbar-inverse bg-inverse bg-faded">
           <div class="row">
             <div  class="col align-items-center d-flex">
-              <!-- <button 
-                type="button"
-                class="btn btn-primary"
-                data-toggle="modal"
-                data-target="#cart">
-                Cart (<span class="total-count"></span>) </a>
-                <a  href="cart.html" ></a>
-              </button> -->
+             
               <button class="">
                 
               </button>
@@ -115,30 +112,23 @@
                     >Contact</a
                   >
                 </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" aria-current="page" href="./blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" aria-current="page" href="./contact.html"
+                    >About</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
         </nav>
 
         <div class="icons">
-          <!-- Nav -->
-          <!-- <nav class="navbar navbar-inverse bg-inverse bg-faded">
-            <div class="row">
-              <div class="col align-items-center d-flex">
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-toggle="modal"
-                  data-target="#cart">
-                  Cart (<span class="total-count"></span>)</button
-                ><button class="clear-cart btn btn-danger ms-2">
-                  Clear Cart
-                </button>
-                <a href="login.html" class="fas fa-user-circle"></a>
-              </div>
-            </div>
-          </nav> -->
-
+          
           <!-- <a href="index.html" class="fas fa-shopping-cart" id="cart">0</a> -->
         </div>
       </div>
